@@ -1,2 +1,22 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
+@theme {
+  --font-primary: 'Inter', serif;
+  --container-xs: 20.5rem;
+}
+
+@utility custom-gradient {
+  background: linear-gradient(290deg, #d6e6fe 0%, rgba(214, 252, 254, 0) 100%);
+}
+
+@utility container-smol {
+  max-width: 328px;
+}
+
+@utility custom-shadow {
+  box-shadow: 16px 32px 56px 0px rgba(143, 174, 207, 0.25);
+}
+
+body {
+  font-family: var(--font-primary);
+}
