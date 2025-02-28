@@ -41,20 +41,46 @@
           Enter your details below
         </div>
         <form id="unitForm" class="flex gap-6">
-          <label class="flex gap-4">
-            <input
-              type="radio"
-              name="unit"
-              value="imperial"
-              checked
-              class="flex gap-3"
-            />
+          <div class="flex gap-4 items-center">
+            <label
+              class="w-8 h-8 border border-[#5E6E85] rounded-full flex items-center justify-center relative"
+            >
+              <input
+                type="radio"
+                name="unit"
+                value="imperial"
+                id="imperial"
+                class="appearance-none peer"
+              />
+              <span
+                class="w-[12px] h-[12px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full z-5"
+              ></span>
+              <span
+                class="w-[32px] h-[32px] bg-[#345FF6] opacity-15 hidden peer-checked:inline-block rounded-full absolute z-2"
+              ></span>
+            </label>
             <span class="text-base font-semibold">Metric</span>
-          </label>
-          <label class="flex gap-4">
-            <input type="radio" name="unit" value="metric" />
+          </div>
+          <div class="flex gap-4 items-center">
+            <label
+              class="w-8 h-8 border border-[#5E6E85] rounded-full flex items-center justify-center"
+            >
+              <input
+                type="radio"
+                name="unit"
+                value="metric"
+                id="metric"
+                class="appearance-none peer"
+              />
+              <span
+                class="w-[12px] h-[12px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full"
+              ></span>
+              <span
+                class="w-[32px] h-[32px] bg-[#345FF6] opacity-15 hidden peer-checked:inline-block rounded-full absolute z-2"
+              ></span>
+            </label>
             <span class="text-base font-semibold">Imperial</span>
-          </label>
+          </div>
         </form>
       </div>
     </div>
