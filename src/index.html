@@ -34,12 +34,18 @@
         healthy weight, it offers a valuable starting point to evaluate your
         overall health and well-being.
       </p>
+
+      <!-- Input Container -->
+
       <div
         class="flex flex-col items-start w-full h-[649px] bg-white z-20 p-6 rounded-2xl custom-shadow mt-12 gap-6"
       >
         <div class="text-2xl font-semibold text-[#253347] tracking-[-1.2px]">
           Enter your details below
         </div>
+
+        <!-- Buttons -->
+
         <form id="unitForm" class="flex gap-6">
           <div class="flex gap-4 items-center">
             <label
@@ -82,6 +88,57 @@
             <span class="text-base font-semibold">Imperial</span>
           </div>
         </form>
+
+        <!-- Inputs -->
+        <div class="flex flex-col gap-[16px]">
+          <div class="flex flex-col gap-[8px]">
+            <div class="text-[#5E6E85] text-sm font-normal">Height</div>
+            <form class="relative">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="border border-[#5E6E85] rounded py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+              />
+              <span
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                >cm</span
+              >
+            </form>
+          </div>
+
+          <div class="flex flex-col gap-[8px]">
+            <div class="text-[#5E6E85] text-sm font-normal">Weight</div>
+            <form class="relative">
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="border border-[#5E6E85] rounded py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+              />
+              <span
+                class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                >kg</span
+              >
+            </form>
+          </div>
+        </div>
+
+        <!-- BMI Result -->
+        <div class="bg-[#345FF6] w-full h-auto rounded-2xl p-8">
+          <div class="flex flex-col gap-6">
+            <div class="flex flex-col gap-2">
+              <div class="text-base text-white font-semibold">
+                Your BMI is...
+              </div>
+              <div class="text-white text-5xl font-semibold">23.4</div>
+            </div>
+            <div class="text-white">
+              Your BMI suggests you’re a healthy weight. Your ideal weight is
+              between <span class="font-bold">63.3kgs - 85.2kgs</span>.
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
