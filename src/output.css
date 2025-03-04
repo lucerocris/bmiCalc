@@ -819,6 +819,12 @@
   .h-\[12px\] {
     height: 12px;
   }
+  .h-\[14px\] {
+    height: 14px;
+  }
+  .h-\[15px\] {
+    height: 15px;
+  }
   .h-\[32px\] {
     height: 32px;
   }
@@ -854,6 +860,12 @@
   }
   .w-\[12px\] {
     width: 12px;
+  }
+  .w-\[14px\] {
+    width: 14px;
+  }
+  .w-\[15px\] {
+    width: 15px;
   }
   .w-\[32px\] {
     width: 32px;
@@ -2369,11 +2381,6 @@
       max-width: 480px;
     }
   }
-  .lg\:h-\[202px\] {
-    @media (width >= 768px) {
-      height: 202px;
-    }
-  }
   .lg\:w-\[267px\] {
     @media (width >= 768px) {
       width: 267px;
@@ -2417,11 +2424,6 @@
   .lg\:gap-\[18px\] {
     @media (width >= 768px) {
       gap: 18px;
-    }
-  }
-  .lg\:gap-\[40px\] {
-    @media (width >= 768px) {
-      gap: 40px;
     }
   }
   .lg\:rounded-s-2xl {
@@ -2509,11 +2511,6 @@
   .xl\:justify-between {
     @media (width >= 1110px) {
       justify-content: space-between;
-    }
-  }
-  .xl\:gap-6 {
-    @media (width >= 1110px) {
-      gap: calc(var(--spacing) * 6);
     }
   }
   .xl\:text-start {

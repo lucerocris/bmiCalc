@@ -65,16 +65,17 @@
             <div class="flex gap-4 items-center lg:w-[299px] lg:gap-[18px]">
               <label
                 class="w-8 h-8 border border-[#5E6E85] rounded-full flex items-center justify-center relative"
+                id="metBorder"
               >
                 <input
                   type="radio"
                   name="unit"
-                  value="imperial"
-                  id="imperial"
+                  value="metric"
+                  id="metric"
                   class="appearance-none peer"
                 />
                 <span
-                  class="w-[12px] h-[12px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full z-5"
+                  class="w-[15px] h-[15px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full z-5"
                 ></span>
                 <span
                   class="w-[32px] h-[32px] bg-[#345FF6] opacity-15 hidden peer-checked:inline-block rounded-full absolute z-2"
@@ -85,16 +86,17 @@
             <div class="flex gap-4 items-center lg:w-[299px] lg:gap-[18px]">
               <label
                 class="w-8 h-8 border border-[#5E6E85] rounded-full flex items-center justify-center"
+                id="impBorder"
               >
                 <input
                   type="radio"
                   name="unit"
-                  value="metric"
+                  value="imperial"
                   id="metric"
                   class="appearance-none peer"
                 />
                 <span
-                  class="w-[12px] h-[12px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full"
+                  class="w-[15px] h-[15px] bg-[#345FF6] hidden peer-checked:inline-block rounded-full"
                 ></span>
                 <span
                   class="w-[32px] h-[32px] bg-[#345FF6] opacity-15 hidden peer-checked:inline-block rounded-full absolute z-2"
@@ -105,37 +107,68 @@
           </form>
 
           <!-- Inputs -->
-          <div class="flex flex-col gap-[16px] lg:flex-row lg:gap-6">
+          <div class="flex flex-col gap-[16px] lg:flex-row lg:gap-6" id="inputContainer">
             <div class="flex flex-col gap-[8px]">
               <div class="text-[#5E6E85] text-sm font-normal">Height</div>
-              <form class="relative">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
-                />
-                <span
-                  class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
-                  >cm</span
-                >
-              </form>
+              <div class="flex gap-4">
+                <form class="relative">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+                  />
+                  <span
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                    id="height-text"
+                    >cm</span
+                  >
+                </form>
+                <form class="relative hidden" id="impForm">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+                  />
+                  <span
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                    >in</span
+                  >
+                </form>
+              </div>
             </div>
 
             <div class="flex flex-col gap-[8px]">
               <div class="text-[#5E6E85] text-sm font-normal">Weight</div>
-              <form class="relative">
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
-                />
-                <span
-                  class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
-                  >kg</span
-                >
-              </form>
+              <div class="flex gap-4">
+                <form class="relative">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+                  />
+                  <span
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                    id="weight-text"
+                    >kg</span
+                  >
+                </form>
+
+                <form class="relative hidden" id="impForm">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    class="border border-[#5E6E85] py-5 px-6 w-full rounded-xl text-2xl font-semibold text-[#253347]"
+                  />
+                  <span
+                    class="absolute right-4 top-1/2 transform -translate-y-1/2 text-[#345FF6] text-2xl font-semibold"
+                    >lbs</span
+                  >
+                </form>
+              </div>
             </div>
           </div>
 
@@ -164,4 +197,5 @@
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>
